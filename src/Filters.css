@@ -1,0 +1,51 @@
+.filters > h2 {
+  text-align: center;
+}
+
+.yearData > input {
+  width: 10vw;
+}
+
+.yearData > p {
+  display: inline-block;
+  margin: 0;
+  width: 4vw;
+}
+
+.radio {
+  width: 14px;
+}
+
+.filters > input {
+  width: calc(14px + 14vw);
+}
+
+.addonBeforeSpecial {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.addonBeforeSpecial .ant-select-auto-complete {
+  width: calc(80% - 100px);
+}
+
+/*
+  margin: 0% 1% 0% 1%;
+
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-header > button {
+    grid-column: 3/4;
+}
+
+*/

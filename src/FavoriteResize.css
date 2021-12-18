@@ -1,0 +1,8 @@
+.favoriteToggle {
+    position: absolute;
+    top: 45%;
+    bottom: 45%;
+    right: 0;
+    width: 1.5vw;
+    height: 10%;
+}

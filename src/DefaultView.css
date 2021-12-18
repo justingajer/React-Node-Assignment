@@ -1,0 +1,99 @@
+#defaultView {
+  text-align: start;
+  display: flex;
+}
+
+#contentContainer {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+  height: calc(80vh + 3.78vw);
+}
+
+#contentContainer > * {
+  position: absolute;
+}
+
+.leftTwix {
+  left: 0;
+
+  margin: 2vw 0 0 2vw;
+  padding: 0.9vw 1%;
+  height: 80vh;
+  width: 32%;
+  display: inline-block;
+}
+
+.leftTwixClosed {
+  width: 32%;
+  height: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  animation-name: minimizeBar;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-in-out;
+  overflow: hidden;
+}
+
+.rightTwix {
+  right: 0;
+
+  margin: 2vw 0 0 1vw;
+  padding: 0.9vw 1%;
+  height: 80vh;
+  width: 62.5%;
+  display: inline-block;
+}
+
+.rightTwixClosed {
+  width: 62.5%;
+  margin: 2vw 0vw 0 1vw;
+  height: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  animation-name: minimizeBar;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  overflow: hidden;
+}
+
+@keyframes minimizeBar {
+  from {
+    bottom: calc(1.89vw - 2.5px);
+    z-index: 500;
+    margin-left: 2vw;
+    height: 80vh;
+  }
+  to {
+    bottom: calc(1.89vw - 2.5px);
+    z-index: -1;
+    margin-left: 2vw;
+    height: 0px;
+  }
+}
+
+/*
+    padding: 0.9vw 1%;
+    padding: 0vw 1%;
+
+
+
+  display: grid;
+  grid-template-columns: 20vw 30vw 50vw;
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-header > button {
+    grid-column: 3/4;
+}
+
+*/

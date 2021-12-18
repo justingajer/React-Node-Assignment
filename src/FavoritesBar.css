@@ -1,0 +1,159 @@
+.favoritesBar > div > div {
+    display: grid;
+    grid-template-columns: 1fr 77px;
+    text-align: left;
+    padding: 2%;
+  }
+  
+  .favoritesBar > div {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(80vh - 0.83em - 0.24em - 36px);
+    width: 95%;
+  }
+  
+  .favoritesBar > h2 {
+    text-align: center;
+  }
+  
+  .favoritesBar {
+    margin: 2vw 0 1% 0vw;
+  
+    padding: 1%;
+    width: 19%;
+    height: 80vh;
+    display: inline-block;
+    position: relative;
+    animation-name: openFavorites;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+  }
+  
+  @keyframes openFavorites {
+    from {
+      width: 3%;
+    }
+    to {
+      width: 19%;
+    }
+  }
+  
+  .favoritesBarClosed {
+    width: 3%;
+    animation-name: closeFavorites;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+    overflow: hidden;
+  }
+  
+  .favoritesBarClosed > div > div {
+    display: none;
+    overflow: hidden;
+  }
+  
+  .favoritesBarClosed > div {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  
+  .favoritesBarClosed > h2 {
+    display: none;
+  }
+  
+  .favoritesBarClosed > .favorite {
+    display: none;
+  }
+  
+  @keyframes closeFavorites {
+    from {
+      width: 19%;
+    }
+    to {
+      width: 3%;
+    }
+  }
+  
+  .favoritesBar > .favoriteToggle {
+    width: 1.5vw;
+    animation-name: resizeFavoritesTogglerSmall;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+  }
+  
+  @keyframes resizeFavoritesTogglerSmall {
+    from {
+      width: 2.5vw;
+    }
+    to {
+      width: 1.5vw;
+    }
+  }
+  
+  .favoritesBarClosed > .favoriteToggle {
+    width: 2.5vw;
+    animation-name: resizeFavoritesToggler;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+  }
+  
+  @keyframes resizeFavoritesToggler {
+    from {
+      width: 1.5vw;
+    }
+    to {
+      width: 2.5vw;
+    }
+  }
+  
+  .playTheme {
+    background-color: #c9746e;
+  }
+  
+  /*
+    animation-name: toPlayView;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+  */
+  
+  .favoriteLabel {
+    display: none;
+
+  }
+
+  .favoriteLabel > svg {
+    margin-left: -5px;
+    width: calc(100% + 10px);
+    height: 100%;
+  }
+  
+  .favoritesBarClosed > .favoriteLabel {
+    margin: auto;
+    width: 100%;
+    height: 40px;
+    display: block;
+  }
+
+  
+  
+  
+  
+  /*
+    margin: 2% 1% 1% 0;
+  
+  
+  .App-header {
+      background-color: #282c34;
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 10vw 80vw 10vw;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      color: white;
+  }
+  
+  .App-header > button {
+      grid-column: 3/4;
+  }
+  
+  */

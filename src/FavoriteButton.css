@@ -1,0 +1,44 @@
+.favorite > img {
+  width: 22px;
+  display: inline;
+}
+
+.favorite > div {
+  width: fit-content;
+  height: fit-content;
+  display: inline;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: -5px;
+}
+
+.favorite {
+  padding: 0;
+  width: 75px;
+  margin: auto;
+  position: relative;
+}
+
+.favorite * {
+  margin: auto;
+  display: block;
+}
+
+/*
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-header > button {
+    grid-column: 3/4;
+}
+
+*/

@@ -1,0 +1,50 @@
+.App-header {
+    grid-column: span 3;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.App-header > div {
+    /*min-height: 100vh;*/
+    width: 100%;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+
+    align-items: center;
+
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding: 0 0px;
+    justify-items: center;
+}
+
+.App-header > * > button {
+    grid-column: 2/3;
+    margin: 0;
+}
+
+.App-header a.ant-btn {
+    width: auto;
+}
+
+.modalLogo {
+    width: 100px;
+}
+
+/*
+    height: fit-content;
+
+    grid-template-columns: 5vw 10fr;
+    justify-content: center;
+
+    grid-template-columns: 20vw 60vw 20vw;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: row;
+    justify-content: space-between;
+*/

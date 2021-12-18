@@ -1,0 +1,61 @@
+.viewDetails {
+  padding: 0;
+  width: 75px;
+  margin: auto;
+}
+
+.viewDetails > a {
+  width: 73px;
+}
+
+.filteredPlays > h2 {
+  text-align: center;
+}
+
+.filteredPlays > .thePlays {
+  margin-top: 3vh;
+  height: calc(73vh - 0.83em - 0.24em - 48px);
+  overflow-y: scroll;
+}
+
+.filteredPlays > .thePlays > div {
+  display: grid;
+  grid-template-columns: 40% 20% 20% 20%;
+  padding: 1%;
+}
+
+.filteredPlays > .thePlays > div > h4, .filteredPlays > .thePlays > div > p{  
+  margin: 0;
+  padding: inherit ;
+}
+
+.filteredPlays > .thePlaysHeader > div {
+  display: grid;
+  grid-template-columns: 39% 20% 41%;
+  padding: 1%;
+}
+
+.filteredPlays > .thePlaysHeader{
+  height: calc(7vh - 0.83em - 0.24em - 48px);
+}
+
+/*
+  margin: 0% 1% 0% 1%;
+
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-header > button {
+    grid-column: 3/4;
+}
+
+*/

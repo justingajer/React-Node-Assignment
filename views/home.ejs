@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include("./partials/headUser"); %>
+    </head>
+    <body>
+        <%- include("./partials/header"); %>
+        
+        <main class="playHome">
+            <%- include("./partials/sidebar"); %>
+            <section class="pagecontent">
+                <h3>Welcome, <%= user.details.firstname %>
+                         <% console.log(user.details.firstname) %>
+                         <%= user.details.lastname %></h3>
+                <img src="<%= user.picture.large %>"/>
+                <p>Date Joined: <%= user.membership.date_joined %></p>
+                <p>City: <%= user.details.city %></p>
+                <p>Country: <%= user.details.country %></p>
+            </section>
+        </main>
+        <%- include("./partials/footer"); %>
+    </body>
+</html>
